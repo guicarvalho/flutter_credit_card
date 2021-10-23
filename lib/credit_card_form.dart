@@ -281,6 +281,7 @@ class _CreditCardFormState extends State<CreditCardForm> {
                 decoration: widget.cardHolderDecoration,
                 keyboardType: TextInputType.text,
                 textInputAction: TextInputAction.done,
+                textCapitalization: TextCapitalization.characters,
                 onEditingComplete: () {
                   onCreditCardModelChange(creditCardModel);
                   FocusScope.of(context).unfocus();
